@@ -1,0 +1,14 @@
+body {
+  background-color: lightblue;
+}
+.parent {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+}
+.center-both {
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+}
