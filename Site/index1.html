@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style/css/style.css">
   </head>
   <body>
-    <form class="parent">
+    <form class="parent" id="form">
       <div class="center-both">
         <h1 class="center-both">Авторизация</h1>
       </div>
@@ -19,8 +19,16 @@
         <input type="password" minlength="6" maxlength="20" size="40" name="password" pattern="^[a-zA-Z0-9]+$" placeholder="Введите пароль" title="В пароле могут присутствовать только буквы латинского алфавита и/или цифры." required>
       </div>
       <div class="center-both">
-        <input type="submit" value="Войти">
+        <input type="submit" value="Войти"/>
       </div>
     </form>
+	<script type="text/javascript">
+		function open_successful_page(event) {
+			window.open("successful_authorization.html");
+		}
+
+		const form = document.getElementById("form");
+		form.addEventListener("submit", open_successful_page);
+	</script>
   </body>
 </html>
